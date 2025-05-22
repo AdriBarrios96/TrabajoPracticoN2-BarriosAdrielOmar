@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Area de Terreno</title>
+  </head>
+  <body> 
+    
+    <h1>Calculadora de Area de Terreno</h1>
+
+    <div>
+        <label for="largo">Largo del terreno (metros): </label>
+        <input type="number" id="largo" placeholder="Ej: 30.5"> 
+    </div>
+    <br> <div>
+        <label for="ancho">Ancho del terreno (metros): </label>
+        <input type="number" id="ancho" placeholder="Ej: 15"> </div>
+    <br> <button id="calcularAreaBoton">Calcular Area</button> <p id="resultado"></p>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //Agregamos referencias
+            const largoInput = document.getElementById('largo');
+            const anchoInput = document.getElementById('ancho');
+            const calcularAreaBoton = document.getElementById('calcularAreaBoton'); // <-- ID corregido para que coincida con el HTML
+            const resultado = document.getElementById('resultado');
+            
+            function calcularArea() { 
+                // Obtenemos los valores
+                const largo = parseFloat(largoInput.value);
+                const ancho = parseFloat(anchoInput.value);
+
+                //validamos las entradas
+                if (isNaN(largo) || isNaN(ancho) || largo <= 0 || ancho <= 0) {
+                    alert('Solo se admiten numeros positivos.!!)');
+                    resultado.textContent = ''; // Limpia el resultado si hay error
+                    return;
+                }
+
+                // Calculamos el area
+                const area = largo * ancho;
+                const areaRedondeada = area.toFixed(2); // toFixed redonde el numero
+
+                alert(`El area del terreno es: ${areaRedondeada} metros cuadrados`);
+
+                // Mostramos el resultado en limpio con un pequeño style  luego de darle a "aceptar".
+                resultado.textContent = `Area calculada: ${areaRedondeada} m²`;
+                resultado.style.fontWeight = 'bold';
+                resultado.style.color = 'red';
+            }
+
+            // Ahora le damos una accion al boton
+            calcularAreaBoton.addEventListener('click', calcularArea);
+        });
+    </script>
+
+  </body>
+</html>
