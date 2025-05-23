@@ -1,5 +1,5 @@
 #mensajesValidacion {
-    margin-top: 20px; /* Un poco de espacio arriba */
+    margin-top: 20px; /* Espacio en la parte de arriba */
     padding: 10px;
     border: 1px solid transparent; /* Borde transparente por defecto */
     border-radius: 4px;
@@ -7,21 +7,21 @@
     text-align: left;
 }
 
-/* Estilo del mensaje exitoso */
+/* Style del mensaje exitoso */
 #mensajesValidacion.success {
     background-color: #d4edda; /* Fondo verde claro */
     color: #155724; /* Texto verde oscuro */
     border-color: #c3e6cb; /* Borde verde */
 }
 
-/* Estilos del mensaje de error */
+/* Style del mensaje de error */
 #mensajesValidacion.error {
     background-color: #f8d7da; /* Fondo rojo claro */
     color: #721c24; /* Texto rojo oscuro */
     border-color: #f5c6cb; /* Borde rojo */
 }
 
-/* Estilos Para el <div>*/
+/* Style del <div>*/
 #mensajesValidacion ul {
     list-style: none; /* Quita los puntos de la lista */
     padding: 0;
