@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario y validaciones</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contenedor"> 
+        <h1>Registro De Datos Personales</h1>
+        <form id="registroForm">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido">
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad (años): </label>
+                <input type="number" id="edad" placeholder="Ingrese un numero entero">
+            </div>
+            <br>
+            <div>
+                <label for="altura">Altura (cm): </label>
+                <input type="number" id="altura" placeholder="Ej: 170">
+            </div>
+            <br>
+            <div>
+                <label for="email">Correo Electronico:  </label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com">
+            </div>
+            <br>
+            <button type="submit" id="botonEnviar">Enviar</button>
+        </form>
+
+        <div id="mensajesValidacion">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

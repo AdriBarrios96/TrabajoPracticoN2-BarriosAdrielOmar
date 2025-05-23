@@ -1,0 +1,29 @@
+#mensajesValidacion {
+    margin-top: 20px; /* Un poco de espacio arriba */
+    padding: 10px;
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Estilo del mensaje exitoso */
+#mensajesValidacion.success {
+    background-color: #d4edda; /* Fondo verde claro */
+    color: #155724; /* Texto verde oscuro */
+    border-color: #c3e6cb; /* Borde verde */
+}
+
+/* Estilos del mensaje de error */
+#mensajesValidacion.error {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    color: #721c24; /* Texto rojo oscuro */
+    border-color: #f5c6cb; /* Borde rojo */
+}
+
+/* Estilos Para el <div>*/
+#mensajesValidacion ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
