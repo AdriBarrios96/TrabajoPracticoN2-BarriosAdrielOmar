@@ -1,3 +1,3 @@
-MODIFICADA por conflicto-1 en archivo dos.
+ARCHIVO DOS alterado en main.
 sin cambios.
 en el archivo dos.
